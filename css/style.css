@@ -36,6 +36,8 @@
     border-radius:5px;
     margin-bottom:15px;
     color:#5a5a5a;
+    outline:none;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 .register_body .input_box .yz_btn,
 .register_body .input_box .yz_btn_noclick{
@@ -50,6 +52,10 @@
     position:absolute;
     top:0;
     right:0;
+    /*禁用文字选择*/
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
 }
 .register_body .input_box .yz_btn_noclick{
     display:none;
@@ -78,4 +84,5 @@
 }
 .register_body .deal_box a{
     color:#ff7600;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }

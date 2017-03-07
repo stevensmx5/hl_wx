@@ -19,13 +19,13 @@
                 countdown(t);
             });
 
-
+            /*
             $(".btn_box,.yz_btn").mousedown(function () {
                 $(this).css("background-color", "#d26100");
             });
             $(document).mouseup(function () {
                 $(".btn_box,.yz_btn").css("background-color", "#ff6600");
-            });
+            });*/
         });
         function countdown(a) {
             if (a == 0) {
@@ -55,17 +55,18 @@
                 <div class="yz_btn_noclick"><span>60</span>秒后重新获取</div>
             </div>
             <div class="input_box">
-                <input type="number" placeholder="请输入收到的验证码" />
+                <input type="number" pattern="[0-9]*" placeholder="请输入收到的验证码" />
             </div>
-
             <div class="btn_box">
-                注册 &gt;
+                <a class="btn_div" href="javascript:">
+                    注册 &gt;
+                </a>
             </div>
         </from>
 
         <div class="deal_box">
             <h3>注册即视为同意</h3>
-            <a href="#">《用户培训协议》</a>
+            <a href="register_02.html">《用户培训协议》</a>
         </div>
     </div>
     <!--底部-->
@@ -77,7 +78,7 @@
                 <ul>
                     <li>
                         <img alt="" src="images/contact_icon_1.png" />
-                        <h3>4567 Street name,012 12 City name,Country</h3>
+                        <h3>北京市光华东里8号院中海广场南楼1603室</h3>
                     </li>
                     <li>
                         <img alt="" src="images/contact_icon_2.png" />

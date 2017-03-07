@@ -1,0 +1,105 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <meta name="format-detection" content="telephone=no" /> 
+    <title>验证手机号码</title>
+	<meta charset="utf-8" />
+
+    <link type="text/css" rel="stylesheet" href="css/public.css" />
+    <link type="text/css" rel="stylesheet" href="css/style.css" />
+    <script type="text/javascript" src="js/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript">
+        $(function () {
+            $(".yz_btn").click(function () {
+                var t = 60;
+                $(this).css("display", "none");
+                $(".yz_btn_noclick").css("display", "block");
+                countdown(t);
+            });
+
+
+            $(".btn_box,.yz_btn").mousedown(function () {
+                $(this).css("background-color", "#d26100");
+            });
+            $(document).mouseup(function () {
+                $(".btn_box,.yz_btn").css("background-color", "#ff6600");
+            });
+        });
+        function countdown(a) {
+            if (a == 0) {
+                $(".yz_btn").css("display", "block");
+                $(".yz_btn_noclick").css("display", "none");
+            } else {
+                a--;
+                $(".yz_btn_noclick span").html(a);
+                setTimeout(function () { countdown(a) }, 1000);
+            }
+        }
+    </script>
+</head>
+<body>
+    <!--头部-->
+    <div class="top_box">
+        <img class="top_logo" alt="" src="images/top_logo.png" />
+    </div>
+    <!--中间内容-->
+    <div class="register_body">
+        <h2>验证手机号码</h2>
+
+        <from>
+            <div class="input_box tel">
+                <input type="number" pattern="[0-9]*" placeholder="请输入手机号码" />
+                <div class="yz_btn">获取手机验证码</div>
+                <div class="yz_btn_noclick"><span>60</span>秒后重新获取</div>
+            </div>
+            <div class="input_box">
+                <input type="number" placeholder="请输入收到的验证码" />
+            </div>
+
+            <div class="btn_box">
+                注册 &gt;
+            </div>
+        </from>
+
+        <div class="deal_box">
+            <h3>注册即视为同意</h3>
+            <a href="#">《用户培训协议》</a>
+        </div>
+    </div>
+    <!--底部-->
+    <div class="bottom_box">
+        <div class="contact_box">
+            <img class="bottom_logo" alt="" src="images/bottom_logo.png" />
+            <h2>联系我们</h2>
+            <div class="contact_info">
+                <ul>
+                    <li>
+                        <img alt="" src="images/contact_icon_1.png" />
+                        <h3>4567 Street name,012 12 City name,Country</h3>
+                    </li>
+                    <li>
+                        <img alt="" src="images/contact_icon_2.png" />
+                        <h3>+012 345 67802</h3>
+                    </li>
+                    <li>
+                        <img alt="" src="images/contact_icon_3.png" />
+                        <h3>info@holland.com</h3>
+                    </li>
+                    <li>
+                        <img alt="" src="images/contact_icon_4.png" />
+                        <h3>www.holland.com</h3>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="bottom_info">
+            <h2>
+                Copyright © 2013 Holland.com.cn All rights reserced <br />
+                荷兰国家旅游会议促进局官方网站 版权所有
+            </h2>
+        </div>
+    </div>
+</body>
+</html>

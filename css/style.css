@@ -1,0 +1,81 @@
+﻿/*注册页面*/
+.register_body{
+    width:100%;
+    float:left;
+    box-sizing:border-box;
+    padding:0px 20px;
+}
+.register_body h2{
+    width:100%;
+    float:left;
+    text-align:center;
+    font-size:16px;
+    line-height:20px;
+    color:#5a5a5a;
+    margin:35px 0px;
+}
+.register_body .input_box{
+    width:100%;
+    float:left;
+    position:relative;
+}
+.register_body .input_box.tel{
+    box-sizing:border-box;
+    padding-right:140px;
+}
+.register_body .input_box input{
+    width:100%;
+    float:left;
+    height:44px;
+    box-sizing:border-box;
+    padding:11px 8px;
+    font-size:16px;
+    line-height:20px;
+    border:1px solid #b2b2b2;
+    background-color:#f9f9f9;
+    border-radius:5px;
+    margin-bottom:15px;
+    color:#5a5a5a;
+}
+.register_body .input_box .yz_btn,
+.register_body .input_box .yz_btn_noclick{
+    width:130px;
+    height:44px;
+    background-color:#ff7600;
+    color:#fff;
+    font-size:16px;
+    line-height:44px;
+    text-align:center;
+    border-radius:5px;
+    position:absolute;
+    top:0;
+    right:0;
+}
+.register_body .input_box .yz_btn_noclick{
+    display:none;
+    background-color:#ebebeb;
+    color:#5a5a5a;
+}
+.register_body .input_box .yz_btn_noclick span{
+    font-size:16px;
+    line-height:44px;
+    color:#ff7600;
+}
+.register_body .deal_box{
+    width:100%;
+    float:left;
+    margin-top:15px;
+    margin-bottom:80px;
+}
+.register_body .deal_box h3,
+.register_body .deal_box a{
+    float:left;
+    font-size:16px;
+    line-height:20px;
+}
+.register_body .deal_box h3{
+    color:#5a5a5a;
+}
+.register_body .deal_box a{
+    color:#ff7600;
+}

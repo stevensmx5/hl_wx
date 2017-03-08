@@ -10,8 +10,20 @@
     <link type="text/css" rel="stylesheet" href="css/public.css" />
     <link type="text/css" rel="stylesheet" href="css/style.css" />
     <script type="text/javascript" src="js/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript">
+        $(function () {
+            //文本框获得焦点时，外部div边框颜色变橘色
+            $(".input_div input").focus(function () {
+                $(this).parent(".input_div").addClass("input_focus");
+            });
+            //文本框失去焦点时，外部div边框颜色变灰色
+            $(".input_div input").blur(function () {
+                $(this).parent(".input_div").removeClass("input_focus");
+            });
+        });
+    </script>
 </head>
-<body>
+<body ontouchstart="">
     <!--头部-->
     <div class="top_box">
         <img class="top_logo" alt="" src="images/top_logo.png" />
@@ -22,20 +34,30 @@
 
         <from>
             <div class="input_box">
-                <input type="text" placeholder="姓名" />
+                <div class="input_div">
+                    <input type="text" placeholder="姓名" />
+                </div>
             </div>
             <div class="input_box">
-                <input type="text" placeholder="公司名称" />
+                <div class="input_div">
+                    <input type="text" placeholder="公司名称" />
+                </div>
             </div>
             <div class="input_box">
-                <input type="text" placeholder="职务" />
+                <div class="input_div">
+                    <input type="text" placeholder="职务" />
+                </div>
             </div>
             <div class="input_box">
-                <input type="text" placeholder="电子邮箱" />
+                <div class="input_div">
+                    <input type="text" placeholder="电子邮箱" />
+                </div>
             </div>
 
             <div class="btn_box m_b_80">
-                提交完成 &gt;
+                <a class="btn_div" href="javascript:">
+                    提交完成 &gt;
+                </a>
             </div>
         </from>
 

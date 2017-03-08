@@ -12,6 +12,7 @@
     <script type="text/javascript" src="js/jquery-2.1.0.min.js"></script>
     <script type="text/javascript">
         $(function () {
+            //倒计时
             $(".yz_btn").click(function () {
                 var t = 60;
                 $(this).css("display", "none");
@@ -19,7 +20,17 @@
                 countdown(t);
             });
 
-            /*
+            //文本框获得焦点时，外部div边框颜色变橘色
+            $(".input_div input").focus(function () {
+                $(this).parent(".input_div").addClass("input_focus");
+            });
+            //文本框失去焦点时，外部div边框颜色变灰色
+            $(".input_div input").blur(function () {
+                $(this).parent(".input_div").removeClass("input_focus");
+            });
+
+
+            /*js模拟按钮点击变色
             $(".btn_box,.yz_btn").mousedown(function () {
                 $(this).css("background-color", "#d26100");
             });
@@ -36,10 +47,10 @@
                 $(".yz_btn_noclick span").html(a);
                 setTimeout(function () { countdown(a) }, 1000);
             }
-        }
+        } 
     </script>
 </head>
-<body>
+<body ontouchstart="">
     <!--头部-->
     <div class="top_box">
         <img class="top_logo" alt="" src="images/top_logo.png" />
@@ -50,12 +61,16 @@
 
         <from>
             <div class="input_box tel">
-                <input type="number" pattern="[0-9]*" placeholder="请输入手机号码" />
+                <div class="input_div">
+                    <input type="number" pattern="[0-9]*" placeholder="请输入手机号码" />
+                </div>
                 <div class="yz_btn">获取手机验证码</div>
                 <div class="yz_btn_noclick"><span>60</span>秒后重新获取</div>
             </div>
             <div class="input_box">
-                <input type="number" pattern="[0-9]*" placeholder="请输入收到的验证码" />
+                <div class="input_div">
+                    <input type="number" pattern="[0-9]*" placeholder="请输入收到的验证码" />
+                </div>
             </div>
             <div class="btn_box">
                 <a class="btn_div" href="javascript:">
@@ -66,7 +81,7 @@
 
         <div class="deal_box">
             <h3>注册即视为同意</h3>
-            <a href="register_02.html">《用户培训协议》</a>
+            <a href="">《用户培训协议》</a>
         </div>
     </div>
     <!--底部-->

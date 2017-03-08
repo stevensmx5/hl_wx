@@ -19,6 +19,16 @@
     float:left;
     position:relative;
 }
+.register_body .input_box .input_div{
+    width:100%;
+    float:left;
+    position:relative;
+    box-sizing:border-box;
+    border:1px solid #b2b2b2;
+    border-radius:5px;
+    margin-bottom:15px;
+    overflow:hidden;
+}
 .register_body .input_box.tel{
     box-sizing:border-box;
     padding-right:140px;
@@ -31,10 +41,9 @@
     padding:11px 8px;
     font-size:16px;
     line-height:20px;
-    border:1px solid #b2b2b2;
     background-color:#f9f9f9;
     border-radius:5px;
-    margin-bottom:15px;
+    border:0;
     color:#5a5a5a;
     outline:none;
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
@@ -52,10 +61,14 @@
     position:absolute;
     top:0;
     right:0;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
     /*禁用文字选择*/
     -moz-user-select: none;
     -webkit-user-select: none;
     user-select: none;
+}
+.register_body .input_box .yz_btn:active{
+    background-color:#d26100;
 }
 .register_body .input_box .yz_btn_noclick{
     display:none;

@@ -47,11 +47,10 @@ a {
     margin-top:40px;
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
-.btn_div:active,
-.btn_div:focus{
+.btn_div:active{
     background-color:#d26100;
 }
-input:focus{
+.input_focus{
     border:1px solid #ff6600 !important;
 }
 input::-webkit-input-placeholder {

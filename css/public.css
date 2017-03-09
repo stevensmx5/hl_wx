@@ -84,6 +84,12 @@ input:-ms-input-placeholder{
     height:30px;
     float:left;
 }
+.top_menu{
+    position:absolute;
+    height:28px;
+    top:11px;
+    right:20px;
+}
 /*底部信息*/
 .bottom_box,
 .contact_box{

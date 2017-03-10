@@ -46,6 +46,11 @@ a {
     border-radius:5px;
     margin-top:40px;
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    
+    /*禁用文字选择*/
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
 }
 .btn_div:active{
     background-color:#d26100;
@@ -89,6 +94,9 @@ input:-ms-input-placeholder{
     height:28px;
     top:11px;
     right:20px;
+}
+.top_menu:active{
+    background-color:rgba(0,0,0,0.2);
 }
 /*底部信息*/
 .bottom_box,

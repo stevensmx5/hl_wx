@@ -1,0 +1,144 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <meta name="format-detection" content="telephone=no" />
+    <title>提示信息</title>
+    <meta charset="utf-8" />
+
+    <link type="text/css" rel="stylesheet" href="css/public.css" />
+    <link type="text/css" rel="stylesheet" href="css/style.css" />
+    <script type="text/javascript" src="js/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript">
+        //弹出提示信息方法
+        //img为图片参数
+        //img=1  成功图片
+        //img=2  错误图片
+        //img=3  感叹号图片
+        //img=4  问号图片
+        //img=5  等待图片
+        //btn为按钮参数
+        //btn=1  1个按钮（只有确认）
+        //btn=2  2个按钮（确认与取消）
+        //btn=0  没有按钮
+        //s为中间显示文字信息
+        function alert_fun(img, btn, s) {
+            var img_src = "",
+                btn_h = "",
+                str_p = "";
+            $('.alert_box').addClass("dis_b");
+            str_p = s;
+            if (img == 1) {
+                img_src = "images/success.png";
+            } else if (img == 2) {
+                img_src = "images/error.png";
+            } else if (img == 3) {
+                img_src = "images/warning.png";
+            } else if (img == 4) {
+                img_src = "images/question.png";
+            } else if (img == 5) {
+                img_src = "images/waiting.png";
+            }
+
+            if (btn == 1) {
+                btn_h = '<div class="agree one_btn">确定</div>';
+            } else if (btn == 2) {
+                btn_h = '<div class="agree two_btn">确定</div><div class="disagree two_btn">取消</div>';
+            } else if (btn == 0) {
+                btn_h = '';
+            }
+            $(".alert_div h2").html(str_p);
+            $(".alert_btn_box").html(btn_h);
+            $(".alert_title img").attr("src", img_src);
+        }
+
+        $(function () {
+            //此方法是未来元素绑定事件
+            //alert_btn_box中的按钮one_btn与two_btn是通过js插入的元素，需要用on来绑定click事件
+            $('.alert_btn_box').on('click', '.one_btn,.two_btn', function () {
+                $('.alert_box').removeClass("dis_b");
+            });
+        });
+    </script>
+</head>
+<body ontouchstart="">    
+    <!--头部-->
+    <div class="top_box">
+        <img class="top_logo" alt="" src="images/top_logo.png" />
+    </div>
+    <!--中间内容-->
+    <div class="prompt_body">
+        <div class="btn_box">
+            <a class="btn_div" href="javascript:alert_fun(1,1,'您提交的信息已经保存！');">
+                您提交的信息已保存
+            </a>
+        </div>
+        <div class="btn_box">
+            <a class="btn_div" href="javascript:alert_fun(2,1,'请将信息填写完整');">
+                请将信息填写完整
+            </a>
+        </div>
+        <div class="btn_box">
+            <a class="btn_div" href="javascript:alert_fun(3,1,'您的账号即将到期');">
+                您的账号即将到期
+            </a>
+        </div>
+        <div class="btn_box">
+            <a class="btn_div" href="javascript:alert_fun(4,2,'您是否需要继续学习');">
+                您是否需要继续学习
+            </a>
+        </div>
+        <div class="btn_box">
+            <a class="btn_div" href="javascript:alert_fun(5,0,'正在读取数据，请稍等...');">
+                正在读取数据
+            </a>
+        </div>
+    </div>
+
+    <div class="alert_box">
+        <div class="alert_bg"></div>
+        <div class="alert_div">
+            <div class="alert_title">
+                <img alt="" src="" />
+            </div>
+            <h2></h2>
+            <div class="alert_btn_box">
+            </div>
+        </div>
+    </div>
+    <!--底部-->
+    <div class="bottom_box">
+        <div class="contact_box">
+            <img class="bottom_logo" alt="" src="images/bottom_logo.png" />
+            <h2>联系我们</h2>
+            <div class="contact_info">
+                <ul>
+                    <li>
+                        <img alt="" src="images/contact_icon_1.png" />
+                        <h3>北京市光华东里8号院中海广场南楼1603室</h3>
+                    </li>
+                    <li>
+                        <img alt="" src="images/contact_icon_2.png" />
+                        <h3>+012 345 67802</h3>
+                    </li>
+                    <li>
+                        <img alt="" src="images/contact_icon_3.png" />
+                        <h3>info@holland.com</h3>
+                    </li>
+                    <li>
+                        <img alt="" src="images/contact_icon_4.png" />
+                        <h3>www.holland.com</h3>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="bottom_info">
+            <h2>
+                Copyright © 2013 Holland.com.cn All rights reserced <br />
+                荷兰国家旅游会议促进局官方网站 版权所有
+            </h2>
+        </div>
+    </div>
+</body>
+</html>

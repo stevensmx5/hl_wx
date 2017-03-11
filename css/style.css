@@ -266,7 +266,7 @@
     top:15%;
     left:30%;
     background-size:100%;
-    background:no-repeat;
+    background-repeat:no-repeat;
 }
 .menu_box .menu_title .menu_div .home{
     background-image:url(../images/home_icon.png);

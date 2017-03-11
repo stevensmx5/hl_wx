@@ -94,6 +94,10 @@ input:-ms-input-placeholder{
     height:28px;
     top:11px;
     right:20px;
+    /*禁用文字选择*/
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
 }
 .top_menu:active{
     background-color:rgba(0,0,0,0.2);

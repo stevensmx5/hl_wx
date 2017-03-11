@@ -217,11 +217,113 @@
 .chapter_box .chapter_div:active .o_btn{
     background-color:#d26100;
 }
+/*菜单导航*/
+.menu_box{
+    width:100%;
+    float:left;
+    position:absolute;
+    top:-100%;
+    background-color:#fff;
+    z-index:25;
+    -moz-transition: top 0.5s 0s;
+    -webkit-transition: top 0.5s 0s;
+    transition: top 0.5s 0s;
+}
+.menu_box .menu_title{
+    width:100%;
+    float:left;
+    box-sizing:border-box;
+    padding:0px 5px;
+    border-bottom:1px solid #ff7600;
+}
+.menu_box .menu_title .menu_div{
+    width:33.33%;
+    float:left;
+    padding:15px;
+    box-sizing:border-box;
+}
+.menu_box .menu_title .menu_div .menu_btn{
+    width:100%;
+    float:left;
+    border-radius:5px;
+    box-sizing:border-box;
+    border:1px solid transparent;
+    position:relative;
+    /*禁用文字选择*/
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+}
+.menu_box .menu_title .menu_div .menu_bg,
+.menu_box .menu_title .menu_div .menu_icon img,
+.menu_box .menu_content .menu_img{
+    width:100%;
+    float:left;
+}
+.menu_box .menu_title .menu_div .menu_icon{
+    width:40%;
+    position:absolute;
+    top:15%;
+    left:30%;
+    background-size:100%;
+}
+.menu_box .menu_title .menu_div .home{
+    background-image:url(../images/home_icon.png);
+}
+.menu_box .menu_title .menu_div .schedule{
+    background-image:url(../images/schedule_icon.png);
+}
+.menu_box .menu_title .menu_div .user{
+    background-image:url(../images/user_icon.png);
+}
+.menu_box .menu_title .menu_div h2{
+    width:100%;
+    float:left;
+    font-size:16px;
+    line-height:20px;
+    text-align:center;
+    color:#415560;
+    position:absolute;
+    top:65%;
+    left:0;
+}
+.menu_box .menu_title .menu_div:active .menu_btn,
+.menu_box .menu_title .menu_div.active .menu_btn{
+    border:1px solid #ff7600;
+}
+.menu_box .menu_title .menu_div:active .home,
+.menu_box .menu_title .menu_div.active .home{
+    background-image:url(../images/home_icon_active.png);
+}
+.menu_box .menu_title .menu_div:active .schedule,
+.menu_box .menu_title .menu_div.active .schedule{
+    background-image:url(../images/schedule_icon_active.png);
+}
+.menu_box .menu_title .menu_div:active .user,
+.menu_box .menu_title .menu_div.active .user{
+    background-image:url(../images/user_icon_active.png);
+}
+.menu_box .menu_title .menu_div:active h2,
+.menu_box .menu_title .menu_div.active h2{
+    color:#ff7600;
+}
+.menu_box .menu_content{
+    width:100%;
+    float:left;
+    position:relative;
+}
+.menu_box .menu_content .btn_box{
+    box-sizing:border-box;
+    padding:0px 20px;
+    position:absolute;
+    bottom:8%;
+}
+.menu_box .menu_content .btn_box .btn_div{
+    margin:0;
+}
 
 
-
-
-
+/*提示信息*/
 .prompt_body{
     width:100%;
     float:left;

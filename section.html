@@ -10,6 +10,19 @@
     <link type="text/css" rel="stylesheet" href="css/public.css" />
     <link type="text/css" rel="stylesheet" href="css/style.css" />
     <script type="text/javascript" src="js/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript">
+        $(function () {
+            $(".top_menu").click(function () {
+                var i = $(".menu_box").css('z-index');
+                //alert(pos_top)
+                if (i == 25) {
+                    $(".menu_box").css({ 'top': '52px', 'z-index': '50' });
+                } else if (i == 50) {
+                    $(".menu_box").css({ 'top': '-10%', 'z-index': '25' });
+                }
+            });
+        });
+    </script>
 </head>
 <body ontouchstart="">
     <!--头部-->
@@ -17,45 +30,77 @@
         <img class="top_logo" alt="" src="images/top_logo.png" />
         <img class="top_menu" alt="" src="images/menu.png" />
     </div>
-    
+    <!--菜单-->
+    <div class="menu_box">
+        <div class="menu_title">
+            <div class="menu_div">
+                <div class="menu_btn">
+                    <img class="menu_bg" alt="" src="images/square.png" />
+                    <div class="menu_icon home">
+                        <img alt="" src="images/square.png" />
+                    </div>
+                    <h2>课程首页</h2>
+                </div>
+            </div>
+            <div class="menu_div active">
+                <div class="menu_btn">
+                    <img class="menu_bg" alt="" src="images/square.png" />
+                    <div class="menu_icon schedule">
+                        <img alt="" src="images/square.png" />
+                    </div>
+                    <h2>我的进度</h2>
+                </div>
+            </div>
+            <div class="menu_div">
+                <div class="menu_btn">
+                    <img class="menu_bg" alt="" src="images/square.png" />
+                    <div class="menu_icon user">
+                        <img alt="" src="images/square.png" />
+                    </div>
+                    <h2>个人中心</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <div class="section_body">
         <div class="section_title">
             <h2>搭乘荷航梦想客机，飞抵欧洲门户史基浦</h2>
         </div>
-        <div class="chapter_box">
-            <div class="chapter_div">
+        <div class="section_box">
+            <div class="section_div">
                 <div class="img_box">
-                    <img class="chapter_img" alt="" src="images/chapter_01.jpg" />
+                    <img class="section_img" alt="" src="images/chapter_01.jpg" />
                     <div class="status_box w_btn">
-                        <img alt="" src="images/lock.png" />
+                        <img alt="" src="images/unfinished.png" />
                         <h2>未开始</h2>
                     </div>
                 </div>
-                <div class="chapter_name">
+                <div class="section_name">
                     搭乘荷航梦想客机，飞抵欧洲门户史基浦
                 </div>
             </div>
-            <div class="chapter_div">
+            <div class="section_div">
                 <div class="img_box">
-                    <img class="chapter_img" alt="" src="images/chapter_02.jpg" />
-                    <div class="status_box b_btn">
-                        <img alt="" src="images/pen.png" />
-                        <h2>正在学习</h2>
-                    </div>
-                </div>
-                <div class="chapter_name">
-                    阿姆斯特丹 钻石之都
-                </div>
-            </div>
-            <div class="chapter_div">
-                <div class="img_box">
-                    <img class="chapter_img" alt="" src="images/chapter_03.jpg" />
+                    <img class="section_img" alt="" src="images/chapter_02.jpg" />
                     <div class="status_box o_btn">
-                        <img alt="" src="images/open.png" />
+                        <img alt="" src="images/success.png" />
                         <h2>已完成</h2>
                     </div>
                 </div>
-                <div class="chapter_name">
+                <div class="section_name">
+                    阿姆斯特丹 钻石之都
+                </div>
+            </div>
+            <div class="section_div">
+                <div class="img_box">
+                    <img class="section_img" alt="" src="images/chapter_03.jpg" />
+                    <div class="status_box o_btn">
+                        <img alt="" src="images/success.png" />
+                        <h2>已完成</h2>
+                    </div>
+                </div>
+                <div class="section_name">
                     巴达维亚城市时尚奥特莱斯
                 </div>
             </div>

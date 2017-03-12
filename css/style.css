@@ -421,8 +421,8 @@
 .progress_box .progress_list .progress_div .progress_title.active{
     border-bottom:1px solid #ff7600;
 }
-.progress_box .progress_list .progress_div .progress_title:active h2,
-.progress_box .progress_list .progress_div .progress_title:active h3{
+.progress_box .progress_list .progress_div .progress_title.active h2,
+.progress_box .progress_list .progress_div .progress_title.active h3{
     color:#ff7600;
 }
 .progress_box .progress_list .progress_div .progress_title:active,
@@ -475,7 +475,6 @@
     box-sizing:border-box;
     padding:10px 0px 10px 45px;
     border-bottom:1px solid #bebebe;
-    display:none;
 }
 .progress_box .progress_list .progress_div .progress_content li:first-child{
     border-top:0 !important;

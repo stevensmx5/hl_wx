@@ -420,7 +420,6 @@
 }
 .progress_box .progress_list .progress_div .progress_title.active{
     border-bottom:1px solid #ff7600;
-    border-right:1px solid #ff7600;
 }
 .progress_box .progress_list .progress_div .progress_title:active,
 .progress_box .progress_list .progress_div .progress_content li:active{

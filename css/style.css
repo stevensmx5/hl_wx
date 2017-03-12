@@ -421,6 +421,10 @@
 .progress_box .progress_list .progress_div .progress_title.active{
     border-bottom:1px solid #ff7600;
 }
+.progress_box .progress_list .progress_div .progress_title:active h2,
+.progress_box .progress_list .progress_div .progress_title:active h3{
+    color:#ff7600;
+}
 .progress_box .progress_list .progress_div .progress_title:active,
 .progress_box .progress_list .progress_div .progress_content li:active{
     background-color:#dbdbdb;
@@ -428,9 +432,10 @@
 .progress_box .progress_list .progress_div .progress_title h2{
     width:30px;
     float:left;
-    font-size:16px;
+    font-size:20px;
     line-height:20px;
     color:#909090;
+    font-weight:bold;
 }
 .progress_box .progress_list .progress_div .progress_title h3{
     width:100%;

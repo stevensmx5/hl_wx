@@ -155,6 +155,7 @@
 .section_box .section_div .img_box .section_img{
     width:100%;
     float:left;
+    min-height:88px;
 }
 .chapter_box .chapter_div .img_box .status_box,
 .section_box .section_div .img_box .status_box{
@@ -233,12 +234,13 @@
     width:100%;
     float:left;
     position:absolute;
-    top:-10%;
+    top:52px;
     background-color:#fff;
     z-index:25;
-    -moz-transition: top 0.5s 0s;
-    -webkit-transition: top 0.5s 0s;
-    transition: top 0.5s 0s;
+    margin-top:-100%;
+    -moz-transition: margin 0.5s 0s;
+    -webkit-transition: margin 0.5s 0s;
+    transition: margin 0.5s 0s;
 }
 .menu_box .menu_title{
     width:100%;
@@ -386,7 +388,126 @@
 .section_box .section_div:active .o_btn{
     background-color:#d26100;
 }
-
+/* 我的进度 */
+.progress_box{
+    width:100%;
+    float:left;
+    box-sizing:border-box;
+    padding:0px 15px;
+    margin-bottom:40px;
+}
+.progress_box .progress_list{
+    width:100%;
+    float:left;
+    border-top:1px solid #bebebe;
+}
+.progress_box .progress_list .progress_div{
+    width:100%;
+    float:left;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+.progress_box .progress_list .progress_div .progress_title{
+    width:100%;
+    float:left;
+    box-sizing:border-box;
+    border:1px solid #bebebe;
+    border-top:0;
+    position:relative;
+    padding:15px 60px 15px 15px;
+}
+.progress_box .progress_list .progress_div .progress_title.active{
+    border-bottom:1px solid #ff7600;
+    border-right:1px solid #ff7600;
+}
+.progress_box .progress_list .progress_div .progress_title:active,
+.progress_box .progress_list .progress_div .progress_content li:active{
+    background-color:#dbdbdb;
+}
+.progress_box .progress_list .progress_div .progress_title h2{
+    width:30px;
+    float:left;
+    font-size:16px;
+    line-height:20px;
+    color:#909090;
+}
+.progress_box .progress_list .progress_div .progress_title h3{
+    width:100%;
+    float:left;
+    box-sizing:border-box;
+    padding-left:30px;
+    font-size:16px;
+    line-height:20px;
+    color:#909090;
+    margin-top:-20px;
+}
+.progress_box .progress_list .progress_div .progress_title.complete h2,
+.progress_box .progress_list .progress_div .progress_title.complete h3{
+    color:#ff7600;
+}
+.progress_box .progress_list .progress_div .progress_title .pro_icon{
+    width:17px;
+    position:absolute;
+    top:-1px;
+    right:40px;
+}
+.progress_box .progress_list .progress_div .progress_title .pro_btn_box{
+    width:16px;
+    height:16px;
+    float:left;
+    position:absolute;
+    top:17px;
+    right:8px;
+}
+.progress_box .progress_list .progress_div .progress_title .pro_btn_box img{
+    width:100%;
+    float:left;
+}
+.progress_box .progress_list .progress_div .progress_content{
+    width:100%;
+    float:left;
+    box-sizing:border-box;
+    padding:10px 0px 10px 45px;
+    border-bottom:1px solid #bebebe;
+    display:none;
+}
+.progress_box .progress_list .progress_div .progress_content li:first-child{
+    border-top:0 !important;
+}
+.progress_box .progress_list .progress_div .progress_content li{
+    width:100%;
+    list-style:disc;
+    list-style-position:inside;
+    color:#7f7f7f;
+    box-sizing:border-box;
+    padding:8px 60px 8px 0px;
+    border-top:1px dotted #ccd0d4;
+    position:relative;
+}
+.progress_box .progress_list .progress_div .progress_content .star_g,
+.progress_box .progress_list .progress_div .progress_content .star_o{
+    width:17px;
+    position:absolute;
+    top:11px;
+    right:40px;
+}
+.progress_box .progress_list .progress_div .progress_content .star_o{
+    display:none;
+}
+.progress_box .progress_list .progress_div .progress_content li.over{
+    color:#ff7600;
+}
+.progress_box .progress_list .progress_div .progress_content li.over .star_g{
+    display:none;
+}
+.progress_box .progress_list .progress_div .progress_content li.over .star_o{
+    display:block;
+}
+.progress_box .progress_list .progress_div:last-child .progress_content{
+    border-bottom:0;
+}
 /*提示信息*/
 .prompt_body{
     width:100%;

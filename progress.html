@@ -1,0 +1,324 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <meta name="format-detection" content="telephone=no" />
+    <title>验证手机号码</title>
+    <meta charset="utf-8" />
+
+    <link type="text/css" rel="stylesheet" href="css/public.css" />
+    <link type="text/css" rel="stylesheet" href="css/style.css" />
+    <script type="text/javascript" src="js/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript">
+        $(function () {
+            $(".top_menu").click(function () {
+                var i = $(".menu_box").css('z-index');
+                //alert(pos_top)
+                if (i == 25) {
+                    $(".menu_box").css({ 'margin-top': '0%', 'z-index': '50' });
+                } else if (i == 50) {
+                    $(".menu_box").css({ 'margin-top': '-100%', 'z-index': '25' });
+                }
+            });
+
+            $(".progress_title").click(function () {
+                var dis = $(this).siblings(".progress_content").css("display");
+                if (dis == "none") {
+                    $(this).siblings(".progress_content").slideDown(300);
+                    $(this).addClass("active");
+                    $(this).children(".pro_btn_box").children(".more_btn").addClass("dis_n");
+                    $(this).children(".pro_btn_box").children(".hid_btn").removeClass("dis_n");
+                } else {
+                    $(this).siblings(".progress_content").slideUp(300);
+                    $(this).removeClass("active");
+                    $(this).children(".pro_btn_box").children(".more_btn").removeClass("dis_n");
+                    $(this).children(".pro_btn_box").children(".hid_btn").addClass("dis_n");
+                }
+            });
+        });
+    </script>
+</head>
+<body ontouchstart="">
+    <!--头部-->
+    <div class="top_box">
+        <img class="top_logo" alt="" src="images/top_logo.png" />
+        <img class="top_menu" alt="" src="images/menu.png" />
+    </div>
+    <!--菜单-->
+    <div class="menu_box">
+        <div class="menu_title">
+            <div class="menu_div">
+                <div class="menu_btn">
+                    <img class="menu_bg" alt="" src="images/square.png" />
+                    <div class="menu_icon home">
+                        <img alt="" src="images/square.png" />
+                    </div>
+                    <h2>课程首页</h2>
+                </div>
+            </div>
+            <div class="menu_div active">
+                <div class="menu_btn">
+                    <img class="menu_bg" alt="" src="images/square.png" />
+                    <div class="menu_icon schedule">
+                        <img alt="" src="images/square.png" />
+                    </div>
+                    <h2>我的进度</h2>
+                </div>
+            </div>
+            <div class="menu_div">
+                <div class="menu_btn">
+                    <img class="menu_bg" alt="" src="images/square.png" />
+                    <div class="menu_icon user">
+                        <img alt="" src="images/square.png" />
+                    </div>
+                    <h2>个人中心</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="progress_body">
+        <div class="chapter_title">
+            <div class="line"></div>
+            <h2>我的进度</h2>
+        </div>
+        <div class="progress_box">
+            <div class="progress_list">
+                <div class="progress_div">
+                    <div class="progress_title">
+                        <h2>1</h2>
+                        <h3>搭乘荷航梦想客机，飞抵欧洲门户史基浦</h3>
+                        
+                        <div class="pro_btn_box">
+                            <img class="more_btn" alt="" src="images/add_g.png" />
+                            <img class="hid_btn dis_n" alt="" src="images/minus_o.png" />
+                        </div>
+                    </div>
+                    <ul class="progress_content">
+                        <li onclick="">
+                            城市发现之旅
+                            <img class="star_g" alt="" src="images/star_g.png" />
+                            <img class="star_o" alt="" src="images/star_o.png" />
+                        </li>
+                        <li>
+                            城市魅力
+                            <img class="star_g" alt="" src="images/star_g.png" />
+                            <img class="star_o" alt="" src="images/star_o.png" />
+                        </li>
+                        <li>
+                            休闲密码
+                            <img class="star_g" alt="" src="images/star_g.png" />
+                            <img class="star_o" alt="" src="images/star_o.png" />
+                        </li>
+                        <li>
+                            荷兰国立博物馆
+                            <img class="star_g" alt="" src="images/star_g.png" />
+                            <img class="star_o" alt="" src="images/star_o.png" />
+                        </li>
+                        <li>
+                            富尔登城堡
+                            <img class="star_g" alt="" src="images/star_g.png" />
+                            <img class="star_o" alt="" src="images/star_o.png" />
+                        </li>
+                    </ul>
+                </div>
+
+
+                <div class="progress_div">
+                    <div class="progress_title">
+                        <h2>2</h2>
+                        <h3>阿姆斯特丹 钻石之都</h3>
+                        <img class="pro_icon" alt="" src="images/star_icon_g.png" />
+                        <div class="pro_btn_box">
+                            <img class="more_btn" alt="" src="images/add_g.png" />
+                            <img class="hid_btn dis_n" alt="" src="images/minus_o.png" />
+                        </div>
+                    </div>
+                    <ul class="progress_content">
+                        <li class="over">
+                            城市发现之旅
+                            <img class="star_g" alt="" src="images/star_g.png" />
+                            <img class="star_o" alt="" src="images/star_o.png" />
+                        </li>
+                        <li class="over">
+                            城市魅力
+                            <img class="star_g" alt="" src="images/star_g.png" />
+                            <img class="star_o" alt="" src="images/star_o.png" />
+                        </li>
+                        <li class="over">
+                            休闲密码
+                            <img class="star_g" alt="" src="images/star_g.png" />
+                            <img class="star_o" alt="" src="images/star_o.png" />
+                        </li>
+                        <li>
+                            荷兰国立博物馆
+                            <img class="star_g" alt="" src="images/star_g.png" />
+                            <img class="star_o" alt="" src="images/star_o.png" />
+                        </li>
+                        <li>
+                            富尔登城堡
+                            <img class="star_g" alt="" src="images/star_g.png" />
+                            <img class="star_o" alt="" src="images/star_o.png" />
+                        </li>
+                    </ul>
+                </div>
+
+
+                <div class="progress_div">
+                    <div class="progress_title">
+                        <h2>3</h2>
+                        <h3>考斯特钻石</h3>
+                        
+                        <div class="pro_btn_box">
+                            <img class="more_btn" alt="" src="images/add_g.png" />
+                            <img class="hid_btn dis_n" alt="" src="images/minus_o.png" />
+                        </div>
+                    </div>
+                    <ul class="progress_content">
+                        <li>
+                            城市发现之旅
+                            <img class="star_g" alt="" src="images/star_g.png" />
+                            <img class="star_o" alt="" src="images/star_o.png" />
+                        </li>
+                        <li>
+                            城市魅力
+                            <img class="star_g" alt="" src="images/star_g.png" />
+                            <img class="star_o" alt="" src="images/star_o.png" />
+                        </li>
+                        <li>
+                            休闲密码
+                            <img class="star_g" alt="" src="images/star_g.png" />
+                            <img class="star_o" alt="" src="images/star_o.png" />
+                        </li>
+                        <li>
+                            荷兰国立博物馆
+                            <img class="star_g" alt="" src="images/star_g.png" />
+                            <img class="star_o" alt="" src="images/star_o.png" />
+                        </li>
+                        <li>
+                            富尔登城堡
+                            <img class="star_g" alt="" src="images/star_g.png" />
+                            <img class="star_o" alt="" src="images/star_o.png" />
+                        </li>
+                    </ul>
+                </div>
+
+
+                <div class="progress_div">
+                    <div class="progress_title complete">
+                        <h2>4</h2>
+                        <h3>迦山钻石</h3>
+                        <img class="pro_icon" alt="" src="images/star_icon_o.png" />
+                        <div class="pro_btn_box">
+                            <img class="more_btn" alt="" src="images/add_o.png" />
+                            <img class="hid_btn dis_n" alt="" src="images/minus_o.png" />
+                        </div>
+                    </div>
+                    <ul class="progress_content">
+                        <li class="over">
+                            城市发现之旅
+                            <img class="star_g" alt="" src="images/star_g.png" />
+                            <img class="star_o" alt="" src="images/star_o.png" />
+                        </li>
+                        <li class="over">
+                            城市魅力
+                            <img class="star_g" alt="" src="images/star_g.png" />
+                            <img class="star_o" alt="" src="images/star_o.png" />
+                        </li>
+                        <li class="over">
+                            休闲密码
+                            <img class="star_g" alt="" src="images/star_g.png" />
+                            <img class="star_o" alt="" src="images/star_o.png" />
+                        </li>
+                        <li class="over">
+                            荷兰国立博物馆
+                            <img class="star_g" alt="" src="images/star_g.png" />
+                            <img class="star_o" alt="" src="images/star_o.png" />
+                        </li>
+                        <li class="over">
+                            富尔登城堡
+                            <img class="star_g" alt="" src="images/star_g.png" />
+                            <img class="star_o" alt="" src="images/star_o.png" />
+                        </li>
+                    </ul>
+                </div>
+
+
+                <div class="progress_div">
+                    <div class="progress_title">
+                        <h2>5</h2>
+                        <h3>巴达维亚城市时尚奥特莱斯</h3>
+                        
+                        <div class="pro_btn_box">
+                            <img class="more_btn" alt="" src="images/add_g.png" />
+                            <img class="hid_btn dis_n" alt="" src="images/minus_o.png" />
+                        </div>
+                    </div>
+                    <ul class="progress_content">
+                        <li>
+                            城市发现之旅
+                            <img class="star_g" alt="" src="images/star_g.png" />
+                            <img class="star_o" alt="" src="images/star_o.png" />
+                        </li>
+                        <li>
+                            城市魅力
+                            <img class="star_g" alt="" src="images/star_g.png" />
+                            <img class="star_o" alt="" src="images/star_o.png" />
+                        </li>
+                        <li>
+                            休闲密码
+                            <img class="star_g" alt="" src="images/star_g.png" />
+                            <img class="star_o" alt="" src="images/star_o.png" />
+                        </li>
+                        <li>
+                            荷兰国立博物馆
+                            <img class="star_g" alt="" src="images/star_g.png" />
+                            <img class="star_o" alt="" src="images/star_o.png" />
+                        </li>
+                        <li>
+                            富尔登城堡
+                            <img class="star_g" alt="" src="images/star_g.png" />
+                            <img class="star_o" alt="" src="images/star_o.png" />
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--底部-->
+    <div class="bottom_box">
+        <div class="contact_box">
+            <img class="bottom_logo" alt="" src="images/bottom_logo.png" />
+            <h2>联系我们</h2>
+            <div class="contact_info">
+                <ul>
+                    <li>
+                        <img alt="" src="images/contact_icon_1.png" />
+                        <h3>北京市光华东里8号院中海广场南楼1603室</h3>
+                    </li>
+                    <li>
+                        <img alt="" src="images/contact_icon_2.png" />
+                        <h3>+012 345 67802</h3>
+                    </li>
+                    <li>
+                        <img alt="" src="images/contact_icon_3.png" />
+                        <h3>info@holland.com</h3>
+                    </li>
+                    <li>
+                        <img alt="" src="images/contact_icon_4.png" />
+                        <h3>www.holland.com</h3>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="bottom_info">
+            <h2>
+                Copyright © 2013 Holland.com.cn All rights reserced <br />
+                荷兰国家旅游会议促进局官方网站 版权所有
+            </h2>
+        </div>
+    </div>
+</body>
+</html>

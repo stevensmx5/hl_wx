@@ -55,6 +55,13 @@ a {
 .btn_div:active{
     background-color:#d26100;
 }
+.cancel_btn{
+    background-color:#b9b4b1;
+    margin-top:10px;
+}
+.cancel_btn:active{
+    background-color:#999491;
+}
 .input_focus{
     border:1px solid #ff6600 !important;
 }

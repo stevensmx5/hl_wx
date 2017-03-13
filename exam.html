@@ -1,0 +1,200 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <meta name="format-detection" content="telephone=no" />
+    <title>验证手机号码</title>
+    <meta charset="utf-8" />
+
+    <link type="text/css" rel="stylesheet" href="css/public.css" />
+    <link type="text/css" rel="stylesheet" href="css/style.css" />
+    <script type="text/javascript" src="js/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript">
+        $(function () {
+            $(".top_menu").click(function () {
+                var i = $(".menu_box").css('z-index');
+                //alert(pos_top)
+                if (i == 25) {
+                    $(".menu_box").css({ 'margin-top': '0%', 'z-index': '50' });
+                } else if (i == 50) {
+                    $(".menu_box").css({ 'margin-top': '-100%', 'z-index': '25' });
+                }
+            });
+        });
+    </script>
+</head>
+<body ontouchstart="">
+    <!--头部-->
+    <div class="top_box">
+        <img class="top_logo" alt="" src="images/top_logo.png" />
+        <img class="top_menu" alt="" src="images/menu.png" />
+    </div>
+    <!--菜单-->
+    <div class="menu_box">
+        <div class="menu_title">
+            <div class="menu_div">
+                <div class="menu_btn">
+                    <img class="menu_bg" alt="" src="images/square.png" />
+                    <div class="menu_icon home">
+                        <img alt="" src="images/square.png" />
+                    </div>
+                    <h2>课程首页</h2>
+                </div>
+            </div>
+            <div class="menu_div active">
+                <div class="menu_btn">
+                    <img class="menu_bg" alt="" src="images/square.png" />
+                    <div class="menu_icon schedule">
+                        <img alt="" src="images/square.png" />
+                    </div>
+                    <h2>我的进度</h2>
+                </div>
+            </div>
+            <div class="menu_div">
+                <div class="menu_btn">
+                    <img class="menu_bg" alt="" src="images/square.png" />
+                    <div class="menu_icon user">
+                        <img alt="" src="images/square.png" />
+                    </div>
+                    <h2>个人中心</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="exam_body">
+        <div class="chapter_title">
+            <div class="line"></div>
+            <h2>课程测验</h2>
+        </div>
+        <from>
+            <div class="exam_box">
+                <h2><span>1</span>搭乘荷航梦想客机,飞抵欧洲门户史基浦</h2>
+
+                <div class="exam_div">
+                    <h3>1. 荷兰航空是何时成立的？(单选) <img alt="" src="images/right_icon.png" /></h3>
+                    <label class="opation_div">
+                        <input name="q_1" type="radio" />
+                        <span>A. 1972年</span>
+                    </label>
+                    <label class="opation_div">
+                        <input name="q_1" type="radio" />
+                        <span>B. 1959年</span>
+                    </label>
+                    <label class="opation_div">
+                        <input name="q_1" type="radio" />
+                        <span>C. 1937年</span>
+                    </label>
+                    <label class="opation_div">
+                        <input name="q_1" type="radio" />
+                        <span>D. 1942年</span>
+                    </label>
+                </div>
+                <div class="exam_div">
+                    <h3>2. 荷兰航空是何时成立的？(多选)<img alt="" src="images/wrong_icon.png" /></h3>
+                    <label class="opation_div">
+                        <input name="q_2" type="checkbox" />
+                        <span>A. 1972年</span>
+                    </label>
+                    <label class="opation_div">
+                        <input name="q_2" type="checkbox" />
+                        <span>B. 1959年</span>
+                    </label>
+                    <label class="opation_div">
+                        <input name="q_2" type="checkbox" />
+                        <span>C. 1937年</span>
+                    </label>
+                    <label class="opation_div">
+                        <input name="q_2" type="checkbox" />
+                        <span>D. 1942年</span>
+                    </label>
+                </div>
+                <div class="exam_div">
+                    <h3>3. 荷兰航空是何时成立的？</h3>
+                    <label class="opation_div">
+                        <input name="q_3" type="radio" />
+                        <span>A. 1972年</span>
+                    </label>
+                    <label class="opation_div">
+                        <input name="q_3" type="radio" />
+                        <span>B. 1959年</span>
+                    </label>
+                    <label class="opation_div">
+                        <input name="q_3" type="radio" />
+                        <span>C. 1937年</span>
+                    </label>
+                    <label class="opation_div">
+                        <input name="q_3" type="radio" />
+                        <span>D. 1942年</span>
+                    </label>
+                </div>
+                <div class="exam_div">
+                    <h3>4. 荷兰航空是何时成立的？</h3>
+                    <label class="opation_div">
+                        <input name="q_4" type="checkbox" />
+                        <span>A. 1972年</span>
+                    </label>
+                    <label class="opation_div">
+                        <input name="q_4" type="checkbox" />
+                        <span>B. 1959年</span>
+                    </label>
+                    <label class="opation_div">
+                        <input name="q_4" type="checkbox" />
+                        <span>C. 1937年</span>
+                    </label>
+                    <label class="opation_div">
+                        <input name="q_4" type="checkbox" />
+                        <span>D. 1942年</span>
+                    </label>
+                </div>
+
+                <div class="btn_box">
+                    <a class="btn_div" href="javascript:">
+                        交&nbsp;&nbsp;卷 &nbsp;&nbsp;&gt;
+                    </a>
+                </div>
+                <div class="btn_box">
+                    <a class="btn_div cancel_btn" href="javascript:">
+                        取&nbsp;&nbsp;消 &nbsp;&nbsp;&gt;
+                    </a>
+                </div>
+            </div>
+        </from>
+    </div>
+
+    <!--底部-->
+    <div class="bottom_box">
+        <div class="contact_box">
+            <img class="bottom_logo" alt="" src="images/bottom_logo.png" />
+            <h2>联系我们</h2>
+            <div class="contact_info">
+                <ul>
+                    <li>
+                        <img alt="" src="images/contact_icon_1.png" />
+                        <h3>北京市光华东里8号院中海广场南楼1603室</h3>
+                    </li>
+                    <li>
+                        <img alt="" src="images/contact_icon_2.png" />
+                        <h3>+012 345 67802</h3>
+                    </li>
+                    <li>
+                        <img alt="" src="images/contact_icon_3.png" />
+                        <h3>info@holland.com</h3>
+                    </li>
+                    <li>
+                        <img alt="" src="images/contact_icon_4.png" />
+                        <h3>www.holland.com</h3>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="bottom_info">
+            <h2>
+                Copyright © 2013 Holland.com.cn All rights reserced <br />
+                荷兰国家旅游会议促进局官方网站 版权所有
+            </h2>
+        </div>
+    </div>
+</body>
+</html>

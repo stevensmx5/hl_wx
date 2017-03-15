@@ -34,7 +34,8 @@ a {
     width:100%;
     float:left;
 }
-.btn_div{
+.btn_div,
+.end_btn{
     display:block;
     position:relative;
     text-decoration:none;
@@ -58,6 +59,10 @@ a {
 .cancel_btn{
     background-color:#b9b4b1;
     margin-top:10px;
+}
+.end_btn{
+    background-color:#f7f7f7;
+    color:#000;
 }
 .cancel_btn:active{
     background-color:#999491;

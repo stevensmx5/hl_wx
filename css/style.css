@@ -633,7 +633,7 @@
     width:100%;
     float:left;
     font-size:14px;
-    color:#231815;
+    color:#9fa0a0;
     line-height:16px;
 }
 .price_box .price_div h4{
@@ -650,8 +650,12 @@
 .infor_box .register_btn{
     margin-top:25px;
 }
+.price_box .price_div .btn_div,
+.price_box .price_div .end_btn{
+    margin-top:20px;
+}
 .infor_box .inofr_div .btn_div,
-.infor_box .inofr_div .end_div{
+.infor_box .inofr_div .end_btn{
     margin-top:0px;
 }
 

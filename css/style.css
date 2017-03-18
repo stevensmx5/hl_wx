@@ -592,71 +592,180 @@
 }
 
 /* 礼品页面 */
+.menber_point{
+    width:100%;
+    float:left;
+    box-sizing:border-box;
+    padding:0px 15px;
+    margin-bottom:35px;
+    position:relative;
+}
+.menber_point h2{
+    width:90px;
+    float:left;
+    font-size:16px;
+    line-height:32px;
+    color:#ff7600;
+    text-align:center;
+}
+.menber_point h3{
+    width:100%;
+    float:left;
+    font-size:32px;
+    line-height:32px;
+    color:#ff7600;
+    box-sizing:border-box;
+    padding:0px 95px 0px 105px;
+    margin-top:-32px;
+}
+.redeem_btn,
+.redeem_end{
+    position:absolute;
+    width:80px;
+    height:32px;
+    border-radius:16px;
+    font-size:16px;
+    line-height:30px;
+    text-align:center;
+    bottom:10px;
+    right:15px;
+    border:1px solid #e5e5e5;
+    color:#ff7600;
+    box-sizing:border-box;
+    /*禁用文字选择*/
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    font-weight:bold;
+}
+.redeem_record{
+    background-color:#d6d6d7;
+    color:#606060;
+    top:0;
+    border:0;
+    line-height:32px;
+}
+.redeem_end{
+    color:#b7b7b7;
+}
+.redeem_btn:active{
+    background-color:#dbdbdb;
+}
+.redeem_record:active{
+    background-color:#999491;
+}
 .price_box,
 .infor_box{
     width:100%;
     float:left;
-    box-sizing:border-box;
-    padding:0px 15px 40px 15px;
+    border-bottom:1px solid #d9d9d9;
+    margin-bottom:65px;
 }
-.price_box .price_div,
-.infor_box .inofr_div{
-    width:50%;
-    float:left;
-    box-sizing:border-box;
-    padding:0px 15px 50px 15px;
-}
-.price_box .price_div img,
-.infor_box .inofr_div img{
+.price_box .price_div{
     width:100%;
     float:left;
-    margin-bottom:1px;
-    border-radius:5px;
+    box-sizing:border-box;
+    padding:0px 15px;
+    border-top:1px solid #d9d9d9;
+    position:relative;
 }
-.price_box .price_div h2,
-.infor_box .inofr_div h2 {
+.price_box .price_div .price_icon{
+    width:90px;
+    height:90px;
+    float:left;
+    position:absolute;
+    top:0;
+    left:15px;
+}
+.price_box .price_div .price_content{
+    width:100%;
+    min-height:90px;
+    float:left;
+    box-sizing:border-box;
+    padding:5px 95px 0px 105px;
+}
+.price_box .price_div .price_content h2{
     width:100%;
     float:left;
     font-size:16px;
-    color:#231815;
-    line-height:20px;
-    margin-top:15px;
+    line-height:18px;
+    color:#ff7600;
+    margin-bottom:8px;
+    font-weight:bold;
 }
-.infor_box .inofr_div h2{
-    min-height:70px;
-}
-.price_box .price_div h2{
-    margin-bottom:15px;
-}
-.price_box .price_div h3,
-.price_box .price_div h4{
+.price_box .price_div .price_content p{
     width:100%;
     float:left;
-    font-size:14px;
-    color:#9fa0a0;
-    line-height:16px;
+    font-size:12px;
+    color:#808080;
+    margin-bottom:24px;
 }
-.price_box .price_div h4{
+.price_box .price_div .price_content .like_icon{
+    height:16px;
+    float:left;
+    position:absolute;
+    bottom:5px;
+    left:120px;
+}
+.price_box .price_div .price_content h3{
+    float:left;
     box-sizing:border-box;
-    padding-left:45px;
-    margin-top:-16px;
-    overflow: hidden;
-    text-overflow:ellipsis;
-    white-space: nowrap;
+    position:absolute;
+    font-size:14px;
+    line-height:16px;
+    left:145px;
+    bottom:5px;
+    font-weight:bold;
 }
-.price_box .register_btn{
-    margin-top:20px;
+/*兑换记录*/
+.record_box{
+    width:100%;
+    float:left;
+    box-sizing:border-box;
+    padding:0px 20px 60px 70px;
 }
-.infor_box .register_btn{
-    margin-top:25px;
+.record_box .record_div{
+    width:100%;
+    float:left;
+    position:relative;
 }
-.price_box .price_div .btn_div,
-.price_box .price_div .end_btn{
-    margin-top:20px;
+.record_box .record_div .time_icon{
+    width:20px;
+    position:absolute;
+    left:-10px;
+    top:0;
 }
-.infor_box .inofr_div .btn_div,
-.infor_box .inofr_div .end_btn{
-    margin-top:0px;
+.record_box .record_div h2,
+.record_box .record_div h3{
+    font-size:14px;
+    font-weight:bold;
+    color:#000;
+}
+.record_box .record_div h2{
+    float:left;
+    margin-left:20px;
+}
+.record_box .record_div h3{
+    float:right;
+}
+.record_box .record_div .like_icon{
+    height:20px;
+    float:right;
+    margin-right:10px;
+}
+.record_box .record_div p{
+    width:100%;
+    min-height:60px;
+    float:left;
+    box-sizing:border-box;
+    padding:0px 20px;
+    border-left:1px solid #f3f3f3;
+    font-size:16px;
+    line-height:18px;
+    color:#ff7600;
+    margin:10px 0px;
+    font-weight:bold;
 }
 
 /*提示信息*/

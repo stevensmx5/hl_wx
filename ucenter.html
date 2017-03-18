@@ -1,0 +1,190 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <meta name="format-detection" content="telephone=no" />
+    <title>资料领取</title>
+    <meta charset="utf-8" />
+
+    <link type="text/css" rel="stylesheet" href="css/public.css" />
+    <link type="text/css" rel="stylesheet" href="css/style.css" />
+    <script type="text/javascript" src="js/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript">
+        $(function () {
+            $(".top_menu").click(function () {
+                var i = $(".menu_box").css('z-index');
+                //alert(pos_top)
+                if (i == 25) {
+                    $(".menu_box").css({ 'margin-top': '0%', 'z-index': '50' });
+                } else if (i == 50) {
+                    $(".menu_box").css({ 'margin-top': '-100%', 'z-index': '25' });
+                }
+            });
+        });
+    </script>
+</head>
+<body ontouchstart="">
+    <!--头部-->
+    <div class="top_box">
+        <img class="top_logo" alt="" src="images/top_logo.png" />
+        <img class="top_menu" alt="" src="images/menu.png" />
+    </div>
+    <!--菜单-->
+    <div class="menu_box">
+        <div class="menu_title">
+            <div class="menu_div">
+                <div class="menu_btn">
+                    <img class="menu_bg" alt="" src="images/square.png" />
+                    <div class="menu_icon home">
+                        <img alt="" src="images/square.png" />
+                    </div>
+                    <h2>课程首页</h2>
+                </div>
+            </div>
+            <div class="menu_div active">
+                <div class="menu_btn">
+                    <img class="menu_bg" alt="" src="images/square.png" />
+                    <div class="menu_icon schedule">
+                        <img alt="" src="images/square.png" />
+                    </div>
+                    <h2>我的进度</h2>
+                </div>
+            </div>
+            <div class="menu_div">
+                <div class="menu_btn">
+                    <img class="menu_bg" alt="" src="images/square.png" />
+                    <div class="menu_icon user">
+                        <img alt="" src="images/square.png" />
+                    </div>
+                    <h2>个人中心</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="ucenter_body">
+        <div class="ucenter_title">
+            <div class="ucenter_photo">
+                <img class="photo_img" alt="" src="images/ucenter_icon.png" />
+
+                <!--照片右下图片-->
+                <img class="certificate_img" alt="" src="images/user_certificate.png" />
+            </div>
+            <h2>高 静</h2>
+            <h3>Gaojing@sian.com</h3>
+            <div class="num_box">
+                <div class="num_div">
+                    <h4>362</h4>
+                    <p>专家人数</p>
+                </div>
+                <div class="num_div">
+                    <h4>190</h4>
+                    <p>我的积分</p>
+                </div>
+                <div class="num_div">
+                    <h4>1260</h4>
+                    <p>注册人数</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="chapter_title">
+            <div class="line"></div>
+            <h2>个人中心</h2>
+        </div>
+
+        <div class="ucenter_btn_box">
+            <div class="ucenter_btn_div" onclick="">
+                <div class="ucenter_btn">
+                    <img class="ucenter_btn_bg" alt="" src="images/square.png" />
+                    <div class="u_btn_icon home">
+                        <img alt="" src="images/square.png" />
+                    </div>
+                    <h2>课程首页</h2>
+                </div>
+            </div>
+            <div class="ucenter_btn_div" onclick="">
+                <div class="ucenter_btn">
+                    <img class="ucenter_btn_bg" alt="" src="images/square.png" />
+                    <div class="u_btn_icon certificate">
+                        <img alt="" src="images/square.png" />
+                    </div>
+                    <h2>专家证书</h2>
+                </div>
+            </div>
+            <div class="ucenter_btn_div" onclick="">
+                <div class="ucenter_btn">
+                    <img class="ucenter_btn_bg" alt="" src="images/square.png" />
+                    <div class="u_btn_icon edit">
+                        <img alt="" src="images/square.png" />
+                    </div>
+                    <h2>修改资料</h2>
+                </div>
+            </div>
+            <div class="ucenter_btn_div" onclick="">
+                <div class="ucenter_btn">
+                    <img class="ucenter_btn_bg" alt="" src="images/square.png" />
+                    <div class="u_btn_icon price">
+                        <img alt="" src="images/square.png" />
+                    </div>
+                    <h2>积分兑换</h2>
+                </div>
+            </div>
+            <div class="ucenter_btn_div active" onclick="">
+                <div class="ucenter_btn">
+                    <img class="ucenter_btn_bg" alt="" src="images/square.png" />
+                    <div class="u_btn_icon chapter">
+                        <img alt="" src="images/square.png" />
+                    </div>
+                    <h2>我的进度</h2>
+                </div>
+            </div>
+            <div class="ucenter_btn_div" onclick="">
+                <div class="ucenter_btn">
+                    <img class="ucenter_btn_bg" alt="" src="images/square.png" />
+                    <div class="u_btn_icon info">
+                        <img alt="" src="images/square.png" />
+                    </div>
+                    <h2>资料领取</h2>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!--底部-->
+    <div class="bottom_box">
+        <div class="contact_box">
+            <img class="bottom_logo" alt="" src="images/bottom_logo.png" />
+            <h2>联系我们</h2>
+            <div class="contact_info">
+                <ul>
+                    <li>
+                        <img alt="" src="images/contact_icon_1.png" />
+                        <h3>北京市光华东里8号院中海广场南楼1603室</h3>
+                    </li>
+                    <li>
+                        <img alt="" src="images/contact_icon_2.png" />
+                        <h3>+012 345 67802</h3>
+                    </li>
+                    <li>
+                        <img alt="" src="images/contact_icon_3.png" />
+                        <h3>info@holland.com</h3>
+                    </li>
+                    <li>
+                        <img alt="" src="images/contact_icon_4.png" />
+                        <h3>www.holland.com</h3>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="bottom_info">
+            <h2>
+                Copyright © 2013 Holland.com.cn All rights reserced <br />
+                荷兰国家旅游会议促进局官方网站 版权所有
+            </h2>
+        </div>
+    </div>
+</body>
+</html>

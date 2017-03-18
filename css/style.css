@@ -802,6 +802,194 @@
 .info_box .info_div .info_btn{
     width:90px;
 }
+
+/*个人中心*/
+.ucenter_title{
+    width:100%;
+    float:left;
+    border-bottom:5px solid #f2f2f2;
+    background-color:#f96332;
+    padding-top:20px;
+}
+.ucenter_title .ucenter_photo{
+    width:20%;
+    min-width:75px;
+    float:left;
+    margin-left:50%;
+    transform:translateX(-50%);
+    -webkit-transform:translateX(-50%);
+    -moz-transform:translateX(-50%);
+    position:relative;
+    margin-bottom:15px;
+}
+.ucenter_title .ucenter_photo .photo_img{
+    width:100%;
+    float:left;
+    border-radius:50%;
+}
+.ucenter_title .ucenter_photo .certificate_img{
+    width:30%;
+    position:absolute;
+    bottom:-3%;
+    right:-3%;
+}
+.ucenter_title h2{
+    width:100%;
+    float:left;
+    font-size:20px;
+    line-height:26px;
+    color:#fff;
+    text-align:center;
+}
+.ucenter_title h3{
+    width:100%;
+    float:left;
+    font-size:12px;
+    line-height:18px;
+    color:#fff;
+    text-align:center;
+}
+.ucenter_title .num_box{
+    width:100%;
+    float:left;
+    background-color:#ec5e2f;
+    margin-top:15px;
+}
+.ucenter_title .num_box .num_div{
+    width:33.33%;
+    float:left;
+    box-sizing:border-box;
+    padding:10px 0px;
+    border-left:1px solid #ef764e;
+}
+.ucenter_title .num_box .num_div:first-child{
+    border:0;
+}
+.ucenter_title .num_box .num_div h4{
+    width:100%;
+    float:left;
+    font-size:20px;
+    line-height:26px;
+    color:#fff;
+    text-align:center;
+}
+.ucenter_title .num_box .num_div p{
+    width:100%;
+    float:left;
+    font-size:12px;
+    line-height:16px;
+    color:#aa2d03;
+    text-align:center;
+}
+.ucenter_body .chapter_title .line{
+    margin:30px 0px;
+}
+.ucenter_btn_box{
+    width:100%;
+    float:left;
+    box-sizing:border-box;
+    padding:0px 5px 40px 5px;
+}
+.ucenter_btn_box .ucenter_btn_div{
+    width:33.33%;
+    float:left;
+    box-sizing:border-box;
+    padding:15px;
+    /*禁用文字选择*/
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+.ucenter_btn_box .ucenter_btn_div .ucenter_btn{
+    width:100%;
+    float:left;
+    box-sizing:border-box;
+    border:1px solid transparent;
+    position:relative;
+    border-radius:5px;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+.ucenter_btn_box .ucenter_btn_div .ucenter_btn .ucenter_btn_bg{
+    width:100%;
+    float:left;
+}
+.ucenter_btn_box .ucenter_btn_div .ucenter_btn .u_btn_icon{
+    width:40%;
+    position:absolute;
+    top:15%;
+    left:30%;
+    background-size:100%;
+    background-repeat:no-repeat;
+}
+.ucenter_btn_box .ucenter_btn_div .ucenter_btn .u_btn_icon img{
+    width:100%;
+    float:left;
+}
+.ucenter_btn_box .ucenter_btn_div .ucenter_btn h2{
+    width:100%;
+    font-size:16px;
+    line-height:20px;
+    text-align:center;
+    color:#415560;
+    position:absolute;
+    top:65%;
+    left:0;
+}
+.ucenter_btn_box .ucenter_btn_div:active .ucenter_btn,
+.ucenter_btn_box .ucenter_btn_div.active .ucenter_btn{
+    border:1px solid #ff7600;
+}
+.ucenter_btn_box .ucenter_btn_div:active .ucenter_btn h2,
+.ucenter_btn_box .ucenter_btn_div.active .ucenter_btn h2{
+    color:#ff7600;
+}
+.ucenter_btn_box .ucenter_btn_div .ucenter_btn .home{
+    background-image:url(../images/home_icon.png);
+}
+.ucenter_btn_box .ucenter_btn_div:active .ucenter_btn .home,
+.ucenter_btn_box .ucenter_btn_div.active .ucenter_btn .home{
+    background-image:url(../images/home_icon_active.png);
+}
+.ucenter_btn_box .ucenter_btn_div .ucenter_btn .certificate{
+    background-image:url(../images/certificate_icon.png);
+}
+.ucenter_btn_box .ucenter_btn_div:active .ucenter_btn .certificate,
+.ucenter_btn_box .ucenter_btn_div.active .ucenter_btn .certificate{
+    background-image:url(../images/certificate_icon_active.png);
+}
+.ucenter_btn_box .ucenter_btn_div .ucenter_btn .edit{
+    background-image:url(../images/edit_icon.png);
+}
+.ucenter_btn_box .ucenter_btn_div:active .ucenter_btn .edit,
+.ucenter_btn_box .ucenter_btn_div.active .ucenter_btn .edit{
+    background-image:url(../images/edit_icon_active.png);
+}
+.ucenter_btn_box .ucenter_btn_div .ucenter_btn .price{
+    background-image:url(../images/price_icon.png);
+}
+.ucenter_btn_box .ucenter_btn_div:active .ucenter_btn .price,
+.ucenter_btn_box .ucenter_btn_div.active .ucenter_btn .price{
+    background-image:url(../images/price_icon_active.png);
+}
+.ucenter_btn_box .ucenter_btn_div .ucenter_btn .chapter{
+    background-image:url(../images/schedule_icon.png);
+}
+.ucenter_btn_box .ucenter_btn_div:active .ucenter_btn .chapter,
+.ucenter_btn_box .ucenter_btn_div.active .ucenter_btn .chapter{
+    background-image:url(../images/schedule_icon_active.png);
+}
+.ucenter_btn_box .ucenter_btn_div .ucenter_btn .info{
+    background-image:url(../images/info_icon.png);
+}
+.ucenter_btn_box .ucenter_btn_div:active .ucenter_btn .info,
+.ucenter_btn_box .ucenter_btn_div.active .ucenter_btn .info{
+    background-image:url(../images/info_icon_active.png);
+}
+
 /*提示信息*/
 .prompt_body{
     width:100%;

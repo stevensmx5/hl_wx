@@ -989,6 +989,24 @@
 .ucenter_btn_box .ucenter_btn_div.active .ucenter_btn .info{
     background-image:url(../images/info_icon_active.png);
 }
+/*欢迎页面*/
+.wel_body{
+    width:100%;
+    float:left;
+    position:relative;
+}
+.wel_body img{
+    width:100%;
+    float:left;
+}
+.wel_body .wel_btn_box{
+    width:100%;
+    float:left;
+    box-sizing:border-box;
+    padding:0px 20px;
+    position:absolute;
+    bottom:15px;
+}
 
 /*提示信息*/
 .prompt_body{
